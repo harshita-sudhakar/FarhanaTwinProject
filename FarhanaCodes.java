@@ -11,6 +11,7 @@ public class FarhanaCodes
 		int[][] squareArray = SquareArray(size);
 
 		//Part 2
+		System.out.println(Array2DAnalyzer(squareArray));
 
 	}
 
@@ -35,6 +36,19 @@ public class FarhanaCodes
 		}
 
 		return squareArray;
+	}
+
+	public static int Array2DAnalyzer(int[][] array)
+	{
+		for(int i=0; i<array.length; i++)
+		{
+			for(int j=0; j<array[0].length; j++)
+			{
+				if(array[i][j] %2 == 0)
+					return array[i][j];
+			}
+		}
+		return -1;
 	}
 
 
