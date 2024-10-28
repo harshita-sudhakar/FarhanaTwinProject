@@ -6,12 +6,15 @@ public class FarhanaCodes
 		Scanner reader = new Scanner(System.in);
 		System.out.println("What size array you want? ");
 		int size = reader.nextInt();
+
 		//Part 1
-		SquareArray(size);
+		int[][] squareArray = SquareArray(size);
+
+		//Part 2
 
 	}
 
-	public static void SquareArray(int size)
+	public static int[][] SquareArray(int size)
 	{
 		int[][] squareArray = new int[size][size];
 		for(int i=0; i<size; i++)
@@ -30,5 +33,9 @@ public class FarhanaCodes
 			}
 			System.out.println();
 		}
+
+		return squareArray;
 	}
+
+
 }
